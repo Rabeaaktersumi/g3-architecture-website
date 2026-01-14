@@ -71,7 +71,7 @@ body {
     text-align: center;
 }
 
-.banner-heading h2 {
+.banner-heading h1 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 0;
@@ -159,7 +159,8 @@ body {
     margin: 70px auto;
 
 }
-.fact-heading h2{
+
+.fact-heading h2 {
     font-size: 2.50rem;
     font-weight: 700;
     margin-bottom: 0;
@@ -172,7 +173,8 @@ body {
     align-items: center;
     text-align: center;
 }
-.fact-card{
+
+.fact-card {
     align-content: center;
     border: 1px solid rgba(255, 144, 14, 1);
     border-radius: 8px;
@@ -181,28 +183,33 @@ body {
     height: 240px;
     padding: 15px;
 }
-.fact-card img{
+
+.fact-card img {
     width: 45px;
     height: 45px;
 }
-.fact-card h2{
+
+.fact-card h2 {
     margin-bottom: 0;
     margin-top: 10px;
 }
 
 /*--our sponsors--*/
-.sponsors{
+.sponsors {
     width: 1440px;
     margin: 100px auto;
 }
-.sponsor-heading{
+
+.sponsor-heading {
     text-align: center;
     margin: 30px 0;
 }
-.sponsor-heading h2{
+
+.sponsor-heading h2 {
     font-size: 2.50rem;
 }
-.sponsor-img{
+
+.sponsor-img {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 90px;
@@ -210,11 +217,86 @@ body {
 }
 
 /*--footer--*/
-footer{
+#footer {
     background-color: rgba(255, 244, 231, 1);
     width: 1440px;
     text-align: center;
     margin: 50px auto;
     padding: 20px;
     border-radius: 8px;
+}
+
+/*-- responsive media query--*/
+
+/*--small device--*/
+@media screen and (max-width: 576px) {
+    .nav {
+        width: 100%;
+    }
+
+    
+    #nav-list, .navigation-bar, .quick-features, #features{
+        flex-direction: column;
+    }
+    .nav-link{
+        margin: 0 auto;
+        gap: 10px;
+    }
+    .banner-heading{
+        width: 100%;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    .quick-features{
+        width: 100%;
+        margin: 50px 0;
+    }
+    #feature-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .feature-content{
+        width: 100%;
+    }
+
+    #features{
+        width: 100%;
+        gap: 80px;
+    }
+    .feature-container {
+        width: 100%;
+    }
+    #features img{
+        width: 100%;
+    }
+    #btn {
+    margin-top: 25px;
+    margin-left: 0px;
+    }
+
+    .some-facts{
+        width: 100%;
+    }
+    .fact-box{
+        flex-direction: column;
+    }
+
+    .sponsors{
+        width: 100%;
+    }
+
+    .sponsor-img{
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 40px;
+        margin-left: 160px;
+        gap: 30px;
+    }
+    #footer{
+        width: 90%;
+
+    }
+    #footer copyright{
+        padding: -25px;
+        font-size: 12px;
+    }
 }
