@@ -234,69 +234,156 @@ body {
         width: 100%;
     }
 
-    
-    #nav-list, .navigation-bar, .quick-features, #features{
+    #nav-list,
+    .navigation-bar,
+    .quick-features,
+    #features {
         flex-direction: column;
     }
-    .nav-link{
+
+    #nav-list {
+        margin-left: -30px;
+    }
+
+    .nav-link {
         margin: 0 auto;
         gap: 10px;
     }
-    .banner-heading{
+
+    .banner-heading {
         width: 100%;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 100%;
     }
-    .quick-features{
+
+    .quick-features {
         width: 100%;
         margin: 50px 0;
     }
+
     #feature-img {
         grid-template-columns: repeat(1, 1fr);
     }
-    .feature-content{
+
+    .feature-content {
         width: 100%;
     }
 
-    #features{
+    #features {
         width: 100%;
         gap: 80px;
     }
+
     .feature-container {
         width: 100%;
     }
-    #features img{
+
+    #features img {
         width: 100%;
-    }
-    #btn {
-    margin-top: 25px;
-    margin-left: 0px;
     }
 
-    .some-facts{
+    #btn {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    .some-facts {
         width: 100%;
     }
-    .fact-box{
+
+    .fact-box {
         flex-direction: column;
     }
 
-    .sponsors{
+    .sponsors {
         width: 100%;
     }
 
-    .sponsor-img{
+    .sponsor-img {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 40px;
         margin-left: 160px;
         gap: 30px;
     }
-    #footer{
+
+    #footer {
         width: 90%;
 
     }
-    #footer copyright{
+
+    #footer copyright {
         padding: -25px;
         font-size: 12px;
     }
+}
+
+/*--medium device--*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .nav {
+        width: 100%;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
+    .banner-heading {
+        width: 100%;
+    }
+
+    .navigation-bar {
+        padding: 0 10px;
+    }
+
+    .quick-features,
+    #features {
+        flex-direction: column;
+    }
+
+    #features {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 50px;
+    }
+
+    #features img {
+        width: 100%;
+    }
+
+    #btn {
+        margin-top: 25px;
+        margin-left: 10px;
+    }
+
+    .some-facts {
+        width: 100%;
+    }
+
+    .fact-heading {
+        padding: 10px;
+    }
+
+    .fact-box {
+        gap: 30px;
+        margin: 60px 10px;
+
+    }
+
+    .sponsors {
+        width: 100%;
+    }
+
+    .sponsor-img {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 120px;
+    }
+
+    #footer {
+        width: 90%;
+    }
+
 }
