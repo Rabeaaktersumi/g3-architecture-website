@@ -233,9 +233,7 @@ body {
 @media screen and (max-width: 576px) {
 
     #header,
-    main {
-        padding: 0 12px;
-    }
+    main {}
 
     .nav {
         width: 100%;
@@ -276,6 +274,7 @@ body {
 
     .feature-content {
         width: 100%;
+        text-align: center;
     }
 
     #features {
@@ -285,23 +284,30 @@ body {
 
     .feature-container {
         width: 100%;
+        text-align: center;
     }
 
     #features img {
         width: 100%;
+        margin: 0 auto;
     }
 
     #btn {
         margin-top: 30px;
-        margin-left: 0px;
+        margin-left: 130px;
     }
 
     .some-facts {
         width: 100%;
     }
 
+    .fact-heading {
+        text-align: center;
+    }
+
     .fact-box {
         flex-direction: column;
+        width: 100%;
     }
 
     .sponsors {
@@ -309,10 +315,10 @@ body {
     }
 
     .sponsor-img {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         margin-top: 40px;
-        margin-left: 120px;
-        gap: 30px;
+        margin-left: 5px;
+        gap: 25px;
     }
 
     #footer {
@@ -328,14 +334,16 @@ body {
 
 /*--medium device--*/
 @media screen and (min-width: 576px) and (max-width: 992px) {
-
-    #header,
-    main {
-        padding: 0 12px;
-    }
-
     .nav {
         width: 100%;
+    }
+
+    .nav-link {
+        margin-right: 20px;
+    }
+
+    .navigation-bar {
+        margin-left: 10px;
     }
 
     .banner-img img {
@@ -373,6 +381,7 @@ body {
 
     .fact-heading {
         width: 100%;
+        text-align: center;
     }
 
     .fact-box {
