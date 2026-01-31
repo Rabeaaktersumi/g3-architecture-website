@@ -269,7 +269,7 @@ body {
 
     #btn {
         margin-top: 30px;
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .some-facts {
@@ -345,6 +345,10 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .features-heading h2 {
+        border-left: none;
+    }
+
     .feature-content {
         width: 100%;
         text-align: center;
@@ -367,7 +371,7 @@ body {
 
     #btn {
         margin-top: 30px;
-        margin-left: 130px;
+        margin-left: 25px;
     }
 
     .some-facts {
@@ -388,10 +392,11 @@ body {
     }
 
     .sponsor-img {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin-top: 40px;
-        margin-left: 5px;
-        gap: 25px;
+        gap: 20px;
+        align-items: center;
+        justify-items: center;
     }
 
     #footer {
@@ -404,4 +409,3 @@ body {
         font-size: 12px;
     }
 }
-
